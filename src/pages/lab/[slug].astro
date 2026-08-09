@@ -1,0 +1,42 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import { LabSchema } from "../../content/config";
+import PostLayout from "../../layouts/PostLayout.astro";
+import createSlug from "../../lib/createSlug";
+
+export async function getStaticPaths() {
+    const labEntries = await getCollection("lab");
+
+    return labEntries.map((entry) => ({
+        params: {
+            slug: createSlug(entry.data.title, entry.slug)
+        },
+        props: {
+            entry
+        },
+    }));
+}
+
+interface Props {
+    entry: CollectionEntry<"lab">;
+}
+
+const { entry } = Astro.props;
+
+const { Content } = await entry.render();
+
+const post = entry.data;
+---
+
+<PostLayout
+    title={post.title}
+    description={post.description}
+    pubDate={post.pubDate}
+    heroImage={post.heroImage}
+    updatedDate={post.updatedDate}
+    badge={post.badge}
+    tags={post.tags}
+    tagBase="lab"
+>
+    <Content />
+</PostLayout>

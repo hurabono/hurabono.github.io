@@ -1,0 +1,446 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/about.css";
+
+const skills = [
+  {
+    category: "Operating Systems",
+    items: ["Windows 10/11", "Windows Server"]
+  },
+  {
+    category: "Microsoft",
+    items: ["Microsoft 365", "Azure", "Active Directory"]
+  },
+  {
+    category: "Networking",
+    items: ["TCP/IP", "DNS", "DHCP", "VPN"]
+  },
+  {
+    category: "Tools",
+    items: ["PowerShell", "Git", "GitHub", "Docker", "Jira"]
+  },
+  {
+    category: "Development",
+    items: ["JavaScript", "React", "Node.js", "SQL"]
+  }
+];
+
+const learning = [
+  {
+    icon: "🖥️",
+    title: "Windows Server & Active Directory",
+    description:
+      "Building a Windows Server home lab and practicing domains, users, OUs, Group Policy, and Windows 11 domain environments."
+  },
+  {
+    icon: "☁️",
+    title: "Microsoft Azure",
+    description:
+      "Expanding my understanding of cloud infrastructure and Microsoft cloud services."
+  },
+  {
+    icon: "🌐",
+    title: "Networking",
+    description:
+      "Learning how DNS, DHCP, TCP/IP, VPNs, and network communication work together."
+  }
+];
+
+const journey = [
+  {
+    year: "2020",
+    title: "Front-End Development",
+    description:
+      "Started building websites and working with web technologies."
+  },
+  {
+    year: "2022",
+    title: "Technical Support",
+    description:
+      "Gained experience helping users troubleshoot technical problems and resolving customer issues."
+  },
+  {
+    year: "2023",
+    title: "Computer Programming & Analysis",
+    description:
+      "Studied software development, databases, networking, DevOps, and system fundamentals."
+  },
+  {
+    year: "2025",
+    title: "George Brown College",
+    description:
+      "Graduated from the Computer Programming and Analysis program."
+  },
+  {
+    year: "2026",
+    title: "IT & Systems",
+    description:
+      "Focused on IT support, Windows Server, Active Directory, networking, Azure, and hands-on home lab projects."
+  }
+];
+---
+
+<BaseLayout
+  title="About Me"
+  description="Learn more about my background, technical skills, and journey into IT."
+>
+
+  <main class="about-page">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="about-hero">
+
+      <div class="about-hero-eyebrow">
+        ABOUT ME
+      </div>
+
+      <h1 class="about-hero-title">
+        Hi, I'm <span>Stephanie.</span>
+      </h1>
+
+      <p class="about-hero-subtitle">
+        IT Support & Technical Support Professional
+        <br />
+        based in Toronto, Canada.
+      </p>
+
+      <p class="about-hero-description">
+        I enjoy solving technical problems, learning how systems work,
+        and turning troubleshooting into practical solutions.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about-section">
+
+      <div class="about-section-heading">
+        <span>01</span>
+        <h2>A Little About Me</h2>
+      </div>
+
+      <div class="about-introduction">
+
+        <div class="about-introduction-text">
+
+          <p>
+            I'm a Computer Programming and Analysis graduate with a
+            background in technical support and web development.
+          </p>
+
+          <p>
+            Over the years, I've worked with customers, supported
+            technical issues, built web applications, and explored
+            different areas of IT.
+          </p>
+
+          <p>
+            Recently, I've been focusing more on IT infrastructure,
+            Windows environments, Active Directory, networking,
+            and cloud technologies.
+          </p>
+
+        </div>
+
+        <div class="about-focus-card">
+
+          <div class="about-focus-icon">
+            💻
+          </div>
+
+          <h3>My Focus</h3>
+
+          <p>
+            Building practical IT skills through hands-on projects,
+            troubleshooting, and continuous learning.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+
+    <section class="about-section">
+
+      <div class="about-section-heading">
+        <span>02</span>
+        <h2>What I Work With</h2>
+      </div>
+
+      <div class="about-skills-grid">
+
+        {skills.map((skill) => (
+          <div class="about-skill-card">
+
+            <h3>{skill.category}</h3>
+
+            <div class="about-skill-tags">
+
+              {skill.items.map((item) => (
+                <span>{item}</span>
+              ))}
+
+            </div>
+
+          </div>
+        ))}
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CURRENTLY LEARNING
+    ========================== -->
+
+    <section class="about-section">
+
+      <div class="about-section-heading">
+        <span>03</span>
+        <h2>Currently Learning</h2>
+      </div>
+
+      <p class="about-section-description">
+        I'm currently expanding my IT infrastructure knowledge through
+        hands-on labs and practical experiments.
+      </p>
+
+      <div class="about-learning-grid">
+
+        {learning.map((item) => (
+          <article class="about-learning-card">
+
+            <div class="about-learning-icon">
+              {item.icon}
+            </div>
+
+            <h3>{item.title}</h3>
+
+            <p>{item.description}</p>
+
+          </article>
+        ))}
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MY JOURNEY
+    ========================== -->
+
+    <section class="about-section about-journey-section">
+
+      <div class="about-section-heading">
+        <span>04</span>
+        <h2>My Journey</h2>
+      </div>
+
+
+      <!-- IMPORTANT:
+           This container is explicitly vertical.
+      -->
+
+      <div class="about-journey">
+
+        {journey.map((item) => (
+          <div class="about-journey-item">
+
+            <div class="about-journey-year">
+              {item.year}
+            </div>
+
+            <div class="about-journey-line">
+
+              <div class="about-journey-dot"></div>
+
+            </div>
+
+            <div class="about-journey-content">
+
+              <h3>{item.title}</h3>
+
+              <p>{item.description}</p>
+
+            </div>
+
+          </div>
+        ))}
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         HOW I LEARN
+    ========================== -->
+
+    <section class="about-section">
+
+      <div class="about-section-heading">
+        <span>05</span>
+        <h2>How I Like to Learn</h2>
+      </div>
+
+      <div class="about-philosophy">
+
+        <div class="about-learning-process">
+
+          <span>LEARN</span>
+          <b>→</b>
+          <span>BUILD</span>
+          <b>→</b>
+          <span>BREAK</span>
+          <b>→</b>
+          <span>FIX</span>
+          <b>→</b>
+          <span>DOCUMENT</span>
+
+        </div>
+
+        <p>
+          I learn best by building things myself. Instead of only
+          reading about a technology, I like creating a small
+          environment, testing it, troubleshooting problems,
+          fixing what breaks, and documenting what I learned.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHAT YOU'LL FIND
+    ========================== -->
+
+    <section class="about-section">
+
+      <div class="about-section-heading">
+        <span>06</span>
+        <h2>What You'll Find Here</h2>
+      </div>
+
+      <div class="about-find-grid">
+
+        <a href="/projects" class="about-find-card">
+          <small>01</small>
+          <h3>Projects</h3>
+          <p>Practical projects and things I've built.</p>
+          <strong>View Projects →</strong>
+        </a>
+
+        <a href="/blog" class="about-find-card">
+          <small>02</small>
+          <h3>Blog</h3>
+          <p>
+            Notes from my learning journey,
+            troubleshooting, and technical experiments.
+          </p>
+          <strong>Read Blog →</strong>
+        </a>
+
+        <a href="/lab" class="about-find-card">
+          <small>03</small>
+          <h3>Home Lab</h3>
+          <p>
+            Hands-on experiments with Windows Server,
+            Active Directory, networking, and more.
+          </p>
+          <strong>Explore Lab →</strong>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOOKING FOR
+    ========================== -->
+
+    <section class="about-section">
+
+      <div class="about-section-heading">
+        <span>07</span>
+        <h2>What I'm Looking For</h2>
+      </div>
+
+      <p class="about-section-description">
+        I'm interested in opportunities where I can solve real-world
+        technical problems while continuing to grow as an IT professional.
+      </p>
+
+      <div class="about-role-list">
+
+        <span>IT Support</span>
+        <span>Technical Support</span>
+        <span>Help Desk</span>
+        <span>System Support</span>
+        <span>Application Support</span>
+        <span>Junior Systems Administration</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="about-contact">
+
+      <div class="about-contact-eyebrow">
+        LET'S CONNECT
+      </div>
+
+      <h2>
+        Thanks for stopping by!
+      </h2>
+
+      <p>
+        I'm always learning, building, and documenting along the way.
+      </p>
+
+      <div class="about-contact-links">
+
+        <a
+          href="https://github.com/hurabono"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/stephfee"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</BaseLayout>

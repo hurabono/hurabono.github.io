@@ -1,3 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+html {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+section {
+     font-family: 'Barlow', sans-serif;
+}
+
+
+
+html {
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: 0.04em;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+h4 {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    line-height: 1.2;
+}
+
+p {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: 1.7;
+}
+
+div{
+     letter-spacing: 0.04em;
+}
+
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
