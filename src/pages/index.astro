@@ -57,6 +57,9 @@ const labPosts = (await getCollection("lab"))
           ))
       }
   </section>
+
+  <div class="divider my-0"></div>
+
   <section class="mt-8 mb-8">
       <div class="flex items-center justify-between mb-6">
           <div class="w-full text-3xl font-bold">
@@ -86,33 +89,35 @@ const labPosts = (await getCollection("lab"))
       }
   </section>
 
+<div class="divider my-0"></div>
+
   <section class="mt-10 mb-8">
       <div class="mt-8 mb-8">
         <div class="text-3xl w-full font-bold">My last projects {"</>"}</div>
       </div>
 
-      <HorizontalCard
-        title="Demo Project 1"
-        img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        url="#"
-        badge="NEW"
-      />
-      <div class="divider my-0"></div>
-      <HorizontalCard
-        title="Demo Project 2"
-        img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        url="#"
-      />
-      <div class="divider my-0"></div>
-      <HorizontalCard
-        title="Demo Project 3"
-        img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        url="#"
-        badge="FOSS"
-      />
+        <HorizontalCard
+          title="Lumen Systems IT Support Portfolio"
+          desc="This repository simulates the day-to-day IT Support operations of a mid-sized Toronto-based company. It is designed to demonstrate practical, job-ready IT support skills including ticket triage, troubleshooting methodology, technical documentation, and knowledge base management using realistic scenarios based on common issues faced by IT Support teams in Canadian workplaces."
+          url="https://github.com/hurabono/Lumen-Systems-IT-Support-Portfolio"
+          badge="IT SUPPORT"
+        />
+
+        <HorizontalCard
+          title="Emobudget"
+          img="https://ik.imagekit.io/stephanie/git-thum/emobudget.png"
+          desc="A personal expense tracking app built with React Native and Spring Boot, featuring machine learning-based emotional spending analysis and a user-friendly interface.."
+          url="https://github.com/hurabono/emobudget2.0"
+          badge="Fullstack"
+        />
+
+        <HorizontalCard
+          title="Retail Fun Time"
+          img="https://ik.imagekit.io/stephanie/git-thum/retailruntime.png"
+          desc="A full-stack mobile app for retail employee management, providing real-time clock-in/out, scheduling, leave requests, and payroll tracking for both employees and managers."
+          url="https://github.com/hurabono/retail_funtime2.0"
+          badge="Group project"
+        />
   </section>
 
 </BaseLayout>
