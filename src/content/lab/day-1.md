@@ -9,7 +9,7 @@ tags:
   - Home Lab
 ---
 
-# 🏠 Building an Active Directory Home Lab — Day 1: From Environment Setup to Domain Controller Promotion
+## Building an Active Directory Home Lab — Day 1: From Environment Setup to Domain Controller Promotion
 
 As part of preparing my portfolio for IT Support roles, I decided to build out the infrastructure for a fictional company, **Lumen Systems**, from the ground up. The first step was tackling one of the systems IT Support techs run into constantly in the real world: **Active Directory (AD)**. Today's goal was to spin up Windows Server 2025 on top of VMware Workstation and promote it all the way to a Domain Controller (DC).
 
