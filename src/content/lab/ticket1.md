@@ -14,10 +14,10 @@ tags:
 
 ## When the Share Opens but the Subfolder Denies You
 
-**Ticket:** LUM-1 · Lumen Systems IT Service Desk  
-**Date:** 2026-08-23  
-**Category:** File Server / NTFS Permissions  
-**Environment:** Windows Server 2022 (DC01), Windows 11 (CLIENT01), domain `LUMEN.LOCAL`
+**Ticket:** LUM-1 · Lumen Systems IT Service Desk  </br>
+**Date:** 2026-08-23  </br>
+**Category:** File Server / NTFS Permissions  </br>
+**Environment:** Windows Server 2022 (DC01), Windows 11 (CLIENT01), domain `LUMEN.LOCAL`</br>
 
 ----------
 

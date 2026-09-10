@@ -1,6 +1,6 @@
 ---
 title: Ticket4 - The GPO Applied, But the Drive Never Mapped
-description: " a new hire in Sales, reported that the standard desktop settings rolled out to her department hadn't reached her PC. Michael Lee (`mlee`), on the same team, said his had updated the previous afternoon without any issue."
+description: "An HR user (`skim`) signed in to her workstation, CLIENT01, and the `H:` drive holding the candidate application files was nowhere to be found. It had worked the day before, and a coworker on the IT team said the same drive showed up fine at their desk. She had already restarted twice before opening the ticket."
 pubDate: 2026-08-26
 heroImage: "https://ik.imagekit.io/stephanie/Ticket-4/LUM4-22.png?updatedAt=1788029366442"
 badge: "IT Support"
@@ -13,10 +13,10 @@ tags:
 
 ## The GPO Applied, But the Drive Never Mapped
 
-**Ticket:** LUM-4 · Lumen Systems IT Service Desk 
-**Date:** 2026-08-26
- **Category:** Active Directory / Group Policy Preferences 
- **Environment:** Windows Server 2022 (DC01), Windows 11 (CLIENT01), domain `LUMEN.LOCAL`
+**Ticket:** LUM-4 · Lumen Systems IT Service Desk </br>
+**Date:** 2026-08-26</br>
+ **Category:** Active Directory / Group Policy Preferences </br>
+ **Environment:** Windows Server 2022 (DC01), Windows 11 (CLIENT01), domain `LUMEN.LOCAL`</br>
 
 ----------
 

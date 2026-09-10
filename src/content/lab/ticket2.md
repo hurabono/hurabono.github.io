@@ -14,10 +14,10 @@ tags:
 
 ## Locked Out Right Before a 10 AM Meeting: The Full LUM-2 Story
 
-**Ticket:** LUM-2 · Lumen Systems IT Service Desk  
-**Date:** 2026-08-24  
-**Category:** Active Directory / Account Lockout  
-**Environment:** Windows Server 2022 (DC01), Windows 11 (CLIENT01), domain `LUMEN.LOCAL`
+**Ticket:** LUM-2 · Lumen Systems IT Service Desk  </br>
+**Date:** 2026-08-24  </br>
+**Category:** Active Directory / Account Lockout  </br>
+**Environment:** Windows Server 2022 (DC01), Windows 11 (CLIENT01), domain `LUMEN.LOCAL`</br>
 
 ---
 
