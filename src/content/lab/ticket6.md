@@ -7,7 +7,7 @@ badge: "IT Support"
 tags:
 
   - Service Request
-  - mployee Offboarding
+  - Employee Offboarding
 ---
 
 

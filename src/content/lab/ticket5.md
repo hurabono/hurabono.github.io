@@ -14,7 +14,7 @@ tags:
 ## New Account Provisioning and Access Verification
 
 **Ticket:** LUM-5 </br>
-**Date:** 2026-08-31 </br>
+**Date:** 2026-08-30 </br>
 **Category:** Service Request / Employee Onboarding </br>
 **Environment:** Windows Server 2022 (DC01), Windows 11 (CLIENT01), LUMEN.LOCAL </br>
 
