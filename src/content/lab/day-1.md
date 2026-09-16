@@ -37,9 +37,10 @@ In an IT Support role, you eventually run into the systems that answer two basic
 
 ## Reference Downloads
 
-- VMware Workstation
-- Broadcom Download Portal (login required)
-- Windows Server 2025 (Evaluation)
+- VMware Workstation https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
+- Broadcom Download Portal (login required)  https://support.broadcom.com/group/ecx/downloads
+- Windows Server 2025 (Evaluation) https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025
+
 
 ---
 

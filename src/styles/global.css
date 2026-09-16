@@ -61,3 +61,18 @@ div{
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+/* Mobile: keep wide post content inside the screen */
+.prose table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.prose :not(pre) > code {
+    overflow-wrap: anywhere;
+}
+
+.prose a {
+    overflow-wrap: anywhere;
+}
